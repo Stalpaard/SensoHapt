@@ -65,3 +65,4 @@ This software uses the OpenHaptics 3.5 toolkit for educational purposes [License
 
 ATICombinedDAQFT .NET Class Library is distributed under the [MIT License](https://opensource.org/licenses/mit-license.html)
 
+This software uses [DirectSound Beep](https://www.codeproject.com/script/Articles/ViewDownloads.aspx?aid=32892) published in the [Creative Commons public domain](https://creativecommons.org/share-your-work/public-domain/)
