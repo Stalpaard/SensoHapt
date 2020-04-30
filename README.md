@@ -56,8 +56,12 @@ Experimental data is output in 3 files:
 
 If an output file with the same subject of the same experiment already exists, it will be overwritten.
 
+## Licensing
 This software is based on pugixml library (http://pugixml.org). pugixml is Copyright (C) 2006-2018 Arseny Kapoulkine.
+
 This software uses GLUT. GLUT is Copyright (c) Mark J. Kilgard, 1996.
+
 This software uses the OpenHaptics 3.5 toolkit for educational purposes
+
 ATICombinedDAQFT .NET Class Library is distributed under the [MIT License](https://opensource.org/licenses/mit-license.html)
 
