@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!--
+	°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+	Overall:
+		Exerted haptic force is clipped by the program to: 
+			(accumulated forces from trial weight and trial events will clip to this value)
+			
+		If an attribute is invalid, the root element and its child elements will be ignored
+	°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+	
+	Experiment Configuration
+	************************
+	
+	Experiment:
+		<attributes>
+			xmlns (XML namespace, leave default)
+			
+			answers_enabled [boolean] (specifies if giving answers is enabled in the experiment, Invalid values: non-boolean)
+			
+			sampling_rate_datalog [Hz; int] (rate which will be used when logging experimental data, Invalid values: negative/0, Limit: 1000Hz (timer values are still buggy, but this is the defined max for ForceSensor readings)
+			
+			random_enabled [boolean] (enables/disables randomization of trial order, Invalid values: non-boolean)
+			
+			randomize_factor [int] (specifies occurring amount of each trial in the final randomized set of trials, Invalid values: 0/negative)
+			Note: randomize factor is ignored if random_enabled is false
+		<elements>
+			Trial:
+				<attributes>
+					id [int] (place of trial in experiment order, Invalid values: negative)
+					
+					duration [ms; int] (trial duration, Invalid values: 0/negative)
+				<elements>
+					cube_colour [RGBA; float, float, float, float] (sets a custom cube colour, if omitted, cube has default color) (Format: R,G,B,A,) Invalid values: non-format inputs
+				
+					touch_activated [ms; int] (determines after how many held seconds the trial starts, Invalid values: negative/bigger than or equal to trial duration)
+						(example: touch_activated="5" => after cube is detected to be held for 5 seconds, trial will commence)
+					
+					weight [kg; double] (simulated cube weight during trial, Invalid values: negative)
+					
+					visual_delay [ms; int] (visual delay on the 3D screen, Invalid values: negative/bigger than 983ms (max delay))
+					
+					event:
+						<attributes>
+							start_timestamp [ms; int] (determines start of event since trial start, Invalid values: negative/bigger than or equal to trial duration)
+							
+							end_timestamp [ms; int] (determines end of event since trial start, Invalid values: negative/bigger than trial duration)
+						<elements>
+							perturbation: (perturbation on haptic device using sinusoïdal function)
+								<elements>
+									frequency [Hz; int] (specifies the perturbation frequency, Invalid values: negative/0)
+									
+									peak_intensity [N; double,double,double] (specifies perturbation peak intensity in each direction (XYZ) (Format: peakX,peakY,peakZ,) Invalid values: non-format inputs
+									
+									phase_shift [°; int] (specifies phase shift of perturbation function, Invalid values: negative)
+	
+	
+-->
+<Experiment xmlns="Experiment" answers_enabled="true" sampling_rate_datalog="100" random_enabled="true" randomize_factor="1">
+	<Trial id="0" duration="5000">
+		<cube_colour rgba="1.0f,0.0f,0.0f,1.0f," />
+		<touch_activated threshold="2000" />
+		<weight kg="0.100" />
+		<event start_timestamp="0" end_timestamp="4000">
+			<perturbation 
+			frequency="5" 
+			peak_intensity="6,3,3," 
+			phase_shift="0" />
+		</event>
+	</Trial>
+	
+	<Trial id="1" duration="3000">
+		<visual_delay delay="600"/>
+		<weight kg="5.000" />
+	</Trial>
+	
+	<Trial id="2" duration="4000">
+		<touch_activated threshold="3000" />
+		<weight kg="0.200" />
+		<visual_delay delay="500"/>
+		<event start_timestamp="0" end_timestamp="1000">
+			<perturbation 
+			frequency="7" 
+			peak_intensity="5,4,2," 
+			phase_shift="3" />
+		</event>
+		
+		<event start_timestamp="2000" end_timestamp="3000">
+			<perturbation 
+			frequency="7" 
+			peak_intensity="5,4,2," 
+			phase_shift="3" />
+		</event>
+		<event start_timestamp="3000" end_timestamp="4000">
+		<!-- Example of empty event which can be possible, but ignored -->
+		</event>
+	</Trial>
+</Experiment>

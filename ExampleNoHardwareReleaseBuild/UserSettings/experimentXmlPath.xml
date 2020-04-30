@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ExperimentConfigPath path="" />
+<TrialDataPath path="C:\Users\Elias Stalpaert\Documents\Visual Studio 2015\Projects\SensoHaptWinFormCLR\Final\Release\TrialData" />
+<ExperimentDetailPath path="C:\Users\Elias Stalpaert\Documents\Visual Studio 2015\Projects\SensoHaptWinFormCLR\Final\Release\ExperimentDetails" />
+<AnswersPath path="C:\Users\Elias Stalpaert\Documents\Visual Studio 2015\Projects\SensoHaptWinFormCLR\Final\Release\Answers" />
+<HapticDeviceName name="HighForceGimbal" />
+<DaqName name="Dev1" />
+<LeftSensorCalibration path="C:\Users\Elias Stalpaert\Documents\Visual Studio 2015\Projects\SensoHaptWinFormCLR\Final\Release\SensorCalibrations\FT8568.cal" />
+<RightSensorCalibration path="C:\Users\Elias Stalpaert\Documents\Visual Studio 2015\Projects\SensoHaptWinFormCLR\Final\Release\SensorCalibrations\FT8569.cal" />
