@@ -4,6 +4,8 @@
 **SensoHapt** is an application targeted at providing an easy-to-use experiment environment 
 for performing experiments involving 3DSystems haptic devices and ATI force sensors with stereoscopic 3D support.
 
+The application was developed using the Visual Studio 2015 IDE in the C++/CLI programming language.
+
 Developed by Gilles Meyhi & Elias Stalpaert as part of their thesis pursuing a MSc degree in Engineering Technology: Electronics-ICT at KULeuven.
 
 ## Experiment configuration
@@ -13,6 +15,8 @@ With possible elements being experiment, trial, event and trial features with th
 
 
 ## Build requirements
+We recommend to open the solution in Visual Studio 2015.
+
 Make sure the [OpenHaptics 3.5 toolkit](https://3dssupport.microsoftcrmportals.com/knowledgebase/article/KA-03459/en-us) and
 [OpenHaptics Phantom Device Driver v5.1.7](https://3dssupport.microsoftcrmportals.com/knowledgebase/article/KA-01460/en-us) and
 [ATICombinedDAQFT .NET Class Library](https://www.ati-ia.com/Products/ft/software/daq_software.aspx) are installed on the build machine.
