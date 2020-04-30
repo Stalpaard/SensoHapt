@@ -17,7 +17,7 @@ We recommend to open the solution in Visual Studio 2015.
 
 Make sure the [OpenHaptics 3.5 toolkit](https://3dssupport.microsoftcrmportals.com/knowledgebase/article/KA-03459/en-us) and
 [OpenHaptics Phantom Device Driver v5.1.7](https://3dssupport.microsoftcrmportals.com/knowledgebase/article/KA-01460/en-us) and
-[ATICombinedDAQFT .NET Class Library](https://www.ati-ia.com/Products/ft/software/daq_software.aspx) are installed on the build machine.
+[ATICombinedDAQFT .NET Class Library v1.0.4.2](https://www.ati-ia.com/Products/ft/software/daq_software.aspx) are installed on the build machine.
 
 - No hardware build (debug purposes): make sure the preprocessor directive 'NO_HARDWARE_DEBUG' is defined in stdafx.h at compile-time.
 
