@@ -19,9 +19,9 @@ Make sure the [OpenHaptics 3.5 toolkit](https://3dssupport.microsoftcrmportals.c
 [OpenHaptics Phantom Device Driver v5.1.7](https://3dssupport.microsoftcrmportals.com/knowledgebase/article/KA-01460/en-us) and
 [ATICombinedDAQFT .NET Class Library v1.0.4.2](https://www.ati-ia.com/Products/ft/software/daq_software.aspx) are installed on the build machine.
 
-- No hardware build (debug purposes): make sure the preprocessor directive 'NO_HARDWARE_DEBUG' is defined in stdafx.h at compile-time.
+- No hardware build (debug purposes): make sure 'NO_HARDWARE_DEBUG' is defined in stdafx.h at compile-time.
 
-- Hardware build (normal):  make sure the preprocessor directive 'NO_HARDWARE_DEBUG' is NOT defined in stdafx.h at compile-time.
+- Hardware build (normal):  make sure 'NO_HARDWARE_DEBUG' is NOT defined in stdafx.h at compile-time.
 
 ## Using the application
 After starting the application using the built executable, the application will load the last given configuration .xml if applicable.
