@@ -59,9 +59,9 @@ If an output file with the same subject of the same experiment already exists, i
 ## Licensing
 This software is based on pugixml library (http://pugixml.org). pugixml is Copyright (C) 2006-2018 Arseny Kapoulkine.
 
-This software uses GLUT. GLUT is Copyright (c) Mark J. Kilgard, 1996.
+This software uses GLUT. GLUT is Copyright (c) Mark J. Kilgard, 1996. [Repo](https://github.com/markkilgard/glut)
 
-This software uses the OpenHaptics 3.5 toolkit for educational purposes
+This software uses the OpenHaptics 3.5 toolkit for educational purposes [License Agreement](https://s3.amazonaws.com/dl.3dsystems.com/binaries/Sensable/OH/3.5/OpenHapticsDeveloperEditionLicense.txt)
 
 ATICombinedDAQFT .NET Class Library is distributed under the [MIT License](https://opensource.org/licenses/mit-license.html)
 
