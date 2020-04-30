@@ -1,18 +1,18 @@
-#SensoHapt
+# SensoHapt
 
-##Description
+## Description
 **SensoHapt** is an application targeted at providing an easy-to-use experiment environment 
 for performing experiments involving 3DSystems haptic devices and ATI force sensors with stereoscopic 3D support.
 
 Developed by Gilles Meyhi & Elias Stalpaert as part of their thesis pursuing a MSc degree in Engineering Technology: Electronics-ICT at KULeuven.
 
-##Experiment configuration
+## Experiment configuration
 Experiments are configured using a .xml file.
 With possible elements being experiment, trial, event and trial features with their corresponding attributes.
 (see given ExperimentConfig.xml for more help)
 
 
-##Build requirements
+## Build requirements
 Make sure the [OpenHaptics 3.5 toolkit](https://3dssupport.microsoftcrmportals.com/knowledgebase/article/KA-03459/en-us) and
 [OpenHaptics Phantom Device Driver v5.1.7](https://3dssupport.microsoftcrmportals.com/knowledgebase/article/KA-01460/en-us) and
 [ATICombinedDAQFT .NET Class Library](https://www.ati-ia.com/Products/ft/software/daq_software.aspx) are installed on the build machine.
@@ -21,7 +21,7 @@ Make sure the [OpenHaptics 3.5 toolkit](https://3dssupport.microsoftcrmportals.c
 
 - Hardware build (normal):  make sure the preprocessor directive 'NO_HARDWARE_DEBUG' is NOT defined in stdafx.h at compile-time.
 
-##Using the application
+## Using the application
 After starting the application using the built executable, the application will load the last given configuration .xml if applicable.
 Otherwise, it will ask the user to select one using the Load Experiment button.
 
@@ -33,7 +33,7 @@ Users can configure output paths and hardware details using the Settings-window 
 
 After pushing the Run-button, the experiment will start. After completion, the main window will reappear, giving the possibility to redo the experiment.
 
-###Settings
+### Settings
 
 - Haptic Device Name: name of the haptic device as is recognized by the 3DSystems Phantom HD drivers
 
@@ -44,7 +44,7 @@ After pushing the Run-button, the experiment will start. After completion, the m
 
 - Output paths: paths specifying output folders for the experimental data .csv's
 
-###Output files
+### Output files
 Experimental data is output in 3 files:
 
 - Answers: .csv containing the answers of the subject belonging to an experiment run
