@@ -6,8 +6,6 @@ for performing experiments involving 3DSystems haptic devices and ATI force sens
 
 The application was developed using the Visual Studio 2015 IDE in the C++/CLI programming language.
 
-SensoHapt was developed by Gilles Meyhi & Elias Stalpaert as part of their thesis pursuing a MSc degree in Engineering Technology: Electronics-ICT at KULeuven.
-
 ## Experiment configuration
 Experiments are configured using a .xml file.
 With possible elements being experiment, trial, event and trial features with their corresponding attributes.
