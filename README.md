@@ -59,7 +59,7 @@ Experimental data is output in 3 files:
 If an output file with the same subject of the same experiment already exists, it will be overwritten.
 
 ## Licensing
-This project was based on an existing program made by NihonBinary Co. 
+This project was inspired by an existing program made by NihonBinary Co. 
 
 This software is based on pugixml library (http://pugixml.org) distributed under the [MIT License](https://opensource.org/licenses/mit-license.html). pugixml is Copyright (C) 2006-2018 Arseny Kapoulkine.
 
