@@ -43,7 +43,7 @@ ExperimentController::ExperimentController(unsigned int subject_nr, const HDstri
 	ExperimentCommon::experiment_state = ExperimentCommon::State::TRIAL_SETUP;
 
 	//Setup experiment handlers
-	hapticHandler = std::make_shared<HapticHandler>(hapticDeviceName, hduVector3Dd{ HF_TORQUE_MAX_ROLL, HF_TORQUE_MAX_PITCH, HF_TORQUE_MAX_YAW });
+	hapticHandler = std::make_shared<HapticHandler>(hapticDeviceName, hduVector3Dd{ HF_TORQUE_MAX_ROLL, HF_TORQUE_MAX_PITCH, HF_TORQUE_MAX_YAW }, 0.9, 0.5, 0.1, 1.0);
 	graphicsHandler = std::make_shared<GraphicsHandler>();
 	fileHandler = std::make_shared<FileHandler>(subject_nr, ExperimentCommon::expInfo->sampling_rate_datalog, outputDataFilePath, outputAnswersFilePath, outputExperimentFilePath);
 	ForceSensorHandler::startDataAcquisition(leftCalibrationPath, rightCalibrationPath, forceSensorDeviceName);
