@@ -15,7 +15,7 @@ With possible elements being experiment, trial, event and trial features with th
 ## Build requirements
 We recommend to open the solution in Visual Studio 2015. The library paths are configured for a x86 build, so make sure you build targeting this architecture or change the library paths to x64 equivalents.
 
-Make sure the [OpenHaptics 3.5 toolkit](https://3dssupport.microsoftcrmportals.com/knowledgebase/article/KA-03459/en-us) and
+Make sure the [OpenHaptics 3.5 toolkit](https://3dssupport.microsoftcrmportals.com/knowledgebase/article/KA-03459/en-us) (update: compiled libs added to repo because link is down) and
 [OpenHaptics Phantom Device Driver v5.1.7](https://3dssupport.microsoftcrmportals.com/knowledgebase/article/KA-01460/en-us) and
 [ATICombinedDAQFT .NET Class Library v1.0.4.2](https://www.ati-ia.com/Products/ft/software/daq_software.aspx) are installed on the build machine.
 
