@@ -1,0 +1,7 @@
+﻿  pickedApplesWin32.cpp
+d:\perforce_workspace\depot\3dtouch\quickhaptics\header\qhwin32class.h(58): warning C4273: 'qhStart': inconsistent dll linkage
+  d:\perforce_workspace\depot\3dtouch\quickhaptics\header\qhwin32class.h(34): note: see previous definition of 'qhStart'
+  Generating code
+  All 5 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  pickApplesWin32_2010.vcxproj -> D:\perforce_workspace\depot\uAPI\examples\Release\pickedApplesWin32.exe
